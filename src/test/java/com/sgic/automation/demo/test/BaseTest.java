@@ -28,8 +28,10 @@ public class BaseTest {
   
 //  private static String screenShotFolderPath = "C:\\Users\\Dilshanth\\Documents\\GitHub\\eclipse\\automation\\src\\test\\resources\\screenshots";
   private static String screenShotFolderPath = System.getProperty("user.dir") + "\\src\\test\\resources\\screenshots\\";
+  private static String reportFolderPath = "\\src\\test\\resources\\results";
 
-  public static ExtentReports extentReport = new ExtentReports(System.getProperty("user.dir", "\\src\\test\\resources\\results"));
+//  public static ExtentReports extentReport = new ExtentReports(System.getProperty("user.dir") + "\\src\\test\\resources\\results");
+  public static ExtentReports extentReport = new ExtentReports(reportFolderPath);
   public static ExtentTest extentTest;
   
   public static String excelFilePath = "\\src\\test\\resources\\data\\credentials.xlsx";
