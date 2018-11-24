@@ -15,7 +15,6 @@ public class LoginPage extends BasePage{
   }
 
   public DashboardPage login(String username, String password) {
-    
     txtUsername.sendKeys(username);
     txtPassword.sendKeys(password);
     btnLogin.click();

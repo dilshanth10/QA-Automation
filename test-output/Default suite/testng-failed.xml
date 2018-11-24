@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.sgic.automation.demo.pagetests.LoginTest">
+      <class name="com.sgic.automation.demo.pagetests.DashboardTest">
         <methods>
           <include name="tearDown"/>
-          <include name="verifyAdminLogin"/>
           <include name="setUp"/>
+          <include name="verifyUserManagement"/>
         </methods>
-      </class> <!-- com.sgic.automation.demo.pagetests.LoginTest -->
+      </class> <!-- com.sgic.automation.demo.pagetests.DashboardTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
