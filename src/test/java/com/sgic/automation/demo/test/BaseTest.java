@@ -20,9 +20,7 @@ public class BaseTest {
 //String driverPathFirefox = "C:\\Users\\Dilshanth\\Documents\\GitHub\\eclipse\\automation\\webdrivers\\chromedriver.exe"; 
   protected static WebDriver driver;
   private String browser;
-  private String baseUrl;
-  private boolean acceptNextAlert = true;
-  private StringBuffer verificationErrors = new StringBuffer();
+//  private String baseUrl;
   
   protected static Properties prop = new Properties();
   
@@ -38,7 +36,7 @@ public class BaseTest {
   
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
-    baseUrl = "https://www.katalon.com/";
+//    baseUrl = "https://www.katalon.com/";
     
     InputStream inputStream = null;
     inputStream = this.getClass().getClassLoader().getResourceAsStream("config/config.properties");

@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30034" started-at="2018-11-24T10:56:24Z" finished-at="2018-11-24T10:56:54Z">
+  <suite name="Default suite" duration-ms="12913" started-at="2018-11-24T11:51:21Z" finished-at="2018-11-24T11:51:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30034" started-at="2018-11-24T10:56:24Z" finished-at="2018-11-24T10:56:54Z">
-      <class name="com.sgic.automation.demo.test.LoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sgic.automation.demo.test.LoginTest@41a2befb]" name="setUp" is-config="true" duration-ms="3449" started-at="2018-11-24T10:56:24Z" finished-at="2018-11-24T10:56:28Z">
+    <test name="Default test" duration-ms="12913" started-at="2018-11-24T11:51:21Z" finished-at="2018-11-24T11:51:34Z">
+      <class name="com.sgic.automation.demo.pagetests.LoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sgic.automation.demo.pagetests.LoginTest@42e26948]" name="setUp" is-config="true" duration-ms="8872" started-at="2018-11-24T11:51:21Z" finished-at="2018-11-24T11:51:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testOrangeHRM()[pri:0, instance:com.sgic.automation.demo.test.LoginTest@41a2befb]" name="testOrangeHRM" duration-ms="25387" started-at="2018-11-24T10:56:28Z" finished-at="2018-11-24T10:56:53Z">
+        <test-method status="PASS" signature="verifyAdminLogin()[pri:0, instance:com.sgic.automation.demo.pagetests.LoginTest@42e26948]" name="verifyAdminLogin" duration-ms="3301" started-at="2018-11-24T11:51:30Z" finished-at="2018-11-24T11:51:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testOrangeHRM -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sgic.automation.demo.test.LoginTest@41a2befb]" name="tearDown" is-config="true" duration-ms="1190" started-at="2018-11-24T10:56:53Z" finished-at="2018-11-24T10:56:54Z">
+        </test-method> <!-- verifyAdminLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sgic.automation.demo.pagetests.LoginTest@42e26948]" name="tearDown" is-config="true" duration-ms="725" started-at="2018-11-24T11:51:33Z" finished-at="2018-11-24T11:51:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.sgic.automation.demo.test.LoginTest -->
+      </class> <!-- com.sgic.automation.demo.pagetests.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
