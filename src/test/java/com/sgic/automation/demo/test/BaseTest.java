@@ -1,12 +1,19 @@
 package com.sgic.automation.demo.test;
 
+import java.io.File;
 import java.io.InputStream;
 import java.util.Properties;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.sgic.automation.demo.util.Functions;
 
 public class BaseTest {
 //String driverPathChrome = "C:\\Users\\Dilshanth\\Documents\\GitHub\\eclipse\\automation\\webdrivers\\chromedriver.exe";
@@ -18,7 +25,15 @@ public class BaseTest {
   private StringBuffer verificationErrors = new StringBuffer();
   
   protected static Properties prop = new Properties();
+  
+//  private static String screenShotFolderPath = "C:\\Users\\Dilshanth\\Documents\\GitHub\\eclipse\\automation\\src\\test\\resources\\screenshots";
+  private static String screenShotFolderPath = System.getProperty("user.dir") + "\\src\\test\\resources\\screenshots\\";
 
+  public static ExtentReports extentReport = new ExtentReports(System.getProperty("user.dir", "\\src\\test\\resources\\results"));
+  public static ExtentTest extentTest;
+  
+  public static String excelFilePath = "\\src\\test\\resources\\data\\credentials.xlsx";
+  
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
     baseUrl = "https://www.katalon.com/";
@@ -57,8 +72,22 @@ public class BaseTest {
 //    driver = new FirefoxDriver();
   }
   
+  public static String captureScreeShot() {
+    String filename= Functions.getTimeStamp("yyyy-MM-dd_HH:mm:ss")+".jpg";
+    File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+    try {
+      FileUtils.copyFile(screenshotFile, new File("e:\\screenshot\\screenshot.png"));
+    }
+    catch (Exception e) {
+      // TODO: handle exception
+    }
+    
+    return filename;
+  }
+  
   @AfterClass(alwaysRun = true)
   public void tearDown() throws Exception {
+    extentReport.flush();
     driver.quit();
   }
 
