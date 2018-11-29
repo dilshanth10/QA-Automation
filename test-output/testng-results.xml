@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16771" started-at="2018-11-24T12:37:25Z" finished-at="2018-11-24T12:37:42Z">
+  <suite name="Default suite" duration-ms="18549" started-at="2018-11-29T08:42:05Z" finished-at="2018-11-29T08:42:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16771" started-at="2018-11-24T12:37:25Z" finished-at="2018-11-24T12:37:42Z">
-      <class name="com.sgic.automation.demo.pagetests.DashboardTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sgic.automation.demo.pagetests.DashboardTest@42e26948]" name="setUp" is-config="true" duration-ms="8535" started-at="2018-11-24T12:37:25Z" finished-at="2018-11-24T12:37:34Z">
+    <test name="Default test" duration-ms="18549" started-at="2018-11-29T08:42:05Z" finished-at="2018-11-29T08:42:24Z">
+      <class name="com.sgic.automation.demo.test.LoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sgic.automation.demo.test.LoginTest@41a2befb]" name="setUp" is-config="true" duration-ms="2792" started-at="2018-11-29T08:42:05Z" finished-at="2018-11-29T08:42:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyUserManagement()[pri:0, instance:com.sgic.automation.demo.pagetests.DashboardTest@42e26948]" name="verifyUserManagement" duration-ms="7465" started-at="2018-11-24T12:37:34Z" finished-at="2018-11-24T12:37:41Z">
+        <test-method status="PASS" signature="testOrangeHRM()[pri:0, instance:com.sgic.automation.demo.test.LoginTest@41a2befb]" name="testOrangeHRM" duration-ms="14758" started-at="2018-11-29T08:42:08Z" finished-at="2018-11-29T08:42:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserManagement -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sgic.automation.demo.pagetests.DashboardTest@42e26948]" name="tearDown" is-config="true" duration-ms="752" started-at="2018-11-24T12:37:41Z" finished-at="2018-11-24T12:37:42Z">
+        </test-method> <!-- testOrangeHRM -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sgic.automation.demo.test.LoginTest@41a2befb]" name="tearDown" is-config="true" duration-ms="984" started-at="2018-11-29T08:42:23Z" finished-at="2018-11-29T08:42:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.sgic.automation.demo.pagetests.DashboardTest -->
+      </class> <!-- com.sgic.automation.demo.test.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

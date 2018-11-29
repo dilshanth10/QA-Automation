@@ -73,16 +73,17 @@ public class BaseTest {
   }
   
   public static String captureScreeShot() {
-    String filename= Functions.getTimeStamp("yyyy-MM-dd_HH:mm:ss")+".jpg";
+    String filename= Functions.getTimeStamp("yyyy-MM-dd_HH.mm.ss")+".jpg";
     File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+    String screenShotName = screenShotFolderPath + filename;
     try {
-      FileUtils.copyFile(screenshotFile, new File("e:\\screenshot\\screenshot.png"));
+      FileUtils.copyFile(screenshotFile, new File(screenShotName));
     }
     catch (Exception e) {
       // TODO: handle exception
     }
     
-    return filename;
+    return screenShotName;
   }
   
   @AfterClass(alwaysRun = true)

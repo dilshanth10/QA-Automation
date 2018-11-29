@@ -47,7 +47,7 @@ public class LoginTest extends BaseTest {
         driver.findElement(By.id("welcome")).click();
         Thread.sleep(500);
         try {
-          assertEquals(driver.findElement(By.id("welcome")).getText(), "Welcomex Admin");
+          assertEquals(driver.findElement(By.id("welcome")).getText(), "Welcome Admin");
           logger.log(Level.INFO, "Verified Welcome Message");
         } catch (Error e) {
           String file = captureScreeShot();
